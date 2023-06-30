@@ -1,0 +1,243 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+
+/* ----------------------- Utility Classess ------------------------------- */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.page {
+  background-color: white;
+}
+
+.img {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  color: white;
+  width: 375px;
+  height: fit-content;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 0 3rem 0;
+  background-color: hsl(241, 100%, 89%);
+}
+
+.img h1 {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.25rem;
+}
+
+.progress {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.progress .circle {
+  display: block;
+  width: 140px;
+  height: 140px;
+  margin: 1rem auto;
+  border-radius: 50%;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.progress .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress .number div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress .number div h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.progress .number div p {
+  color: hsl(241, 100%, 89%);
+  flex-wrap: wrap;
+}
+
+.img .comment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img .comment p {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+
+
+.data-container {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+
+.data-container h2 {
+  color: hsla(224, 30%, 27%, 0.9);
+}
+
+.data-container .data {
+  width: 100%;
+}
+
+.data-container .data .stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+.data-container .data .stat .score {
+  color: hsl(224, 30%, 27%);
+  font-weight: 600;
+}
+
+.data-container .data .stat .score span {
+  color: hsl(241, 36%, 78%);
+}
+
+.data-container .data .stat .icon_category {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.data-container .data .stat:nth-of-type(1) {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.05);
+}
+
+.data-container .data .stat:nth-of-type(2) {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.05);
+}
+
+.data-container .data .stat:nth-of-type(3) {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.05);
+}
+
+.data-container .data .stat:nth-of-type(4) {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(241, 100%, 89%, 0.2);
+}
+
+.data-container button {
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+  padding: 0.75rem 0;
+  margin: 1rem 0;
+  font-size: 18px;
+  background-color: hsl(224, 30%, 27%);
+  cursor: pointer;
+}
+
+.data-container button:hover {
+  background: hsla(241, 81%, 54%, 0.8);
+}
+
+
+/* -------------------------- Media Query ---------------------------- */
+@media screen and (min-width: 800px) {
+  .page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem auto;
+    gap: 16px;
+    border-radius: 20px;
+    box-shadow: 12px 10px 30px hsla(224, 30%, 27%, 0.3);
+  }
+
+  .img {
+    border-radius: 20px;
+  }
+
+  .img h1 {
+    font-size: 2rem;
+  }
+
+  .progress .circle {
+    width: 200px;
+    height: 200px;
+    margin: 2rem auto;
+  }
+  
+  .progress .number div h1 {
+    font-size: 4rem;
+  }
+
+  .progress .number div p {
+    margin-top: -0.75rem;
+  }
+}
