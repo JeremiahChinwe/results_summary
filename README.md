@@ -22,7 +22,7 @@ Users should be able to:
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
 
-### Screenshot
+### Screenshots
 
 ![Mobile View](./assets/images/result-moblie.png)
 ![Desktop View](./assets/images/results-summary-desktop.png)
@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Click to see my solution](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hub)
+- Live Site URL: [Vercel](https://results-summary-gold-phi.vercel.app/)
 
 ## My process
 
@@ -45,7 +45,7 @@ Users should be able to:
 
 ### What I learned
 
-Building this project, I learned that React.js truly makes web developement easier and faster through the great features like Components, jsx extention(enables writing html faster with javaScript), etc.
+Building this project, I learned that React.js truly makes web developement easier and faster through the great features like Components, jsx extention(enables writing html faster with javaScript), etc. it provides.
 
 ## Author
 

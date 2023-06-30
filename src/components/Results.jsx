@@ -28,7 +28,7 @@ export default function Results() {
                         {data.map(({ icon, category, score }) => (
                             <div key={score} className="stat">
                                 <div className="icon_category">
-                                    <img src={icon} alt="Icons" />
+                                    <img src={icon} alt="Icon" />
                                     <p>{category}</p>
                                 </div>
                                 <p className="score">{score} <span>/ 100</span></p>
