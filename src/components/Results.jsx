@@ -1,4 +1,8 @@
 import React from 'react'
+import reaction from "../../assets/images/icon-reaction.svg"
+import memory from "../../assets/images/icon-memory.svg"
+import verbal from "../../assets/images/icon-verbal.svg"
+import visual from "../../assets/images/icon-visual.svg"
 
 
 export default function Results() {
@@ -6,22 +10,22 @@ export default function Results() {
         {
           category: "Reaction",
           score: 80,
-          icon: "./assets/images/icon-reaction.svg"
+          icon: reaction,
         },
         {
           category: "Memory",
           score: 92,
-          icon: "./assets/images/icon-memory.svg"
+          icon: memory
         },
         {
           category: "Verbal",
           score: 61,
-          icon: "./assets/images/icon-verbal.svg"
+          icon: verbal
         },
         {
           category: "Visual",
           score: 72,
-          icon: "./assets/images/icon-visual.svg"
+          icon: visual
         }
       ]
 
